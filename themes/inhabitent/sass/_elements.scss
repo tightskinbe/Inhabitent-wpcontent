@@ -18,6 +18,8 @@ body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+
+
 blockquote,
 q {
   quotes: '' '';
@@ -70,4 +72,18 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
+}
+ 
+.entry-title {
+  display: none;
+}
+
+.shop-container {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.copy-right {
+  text-align: center;
+  padding-top: 40px;
 }

@@ -27,10 +27,6 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
 
 	ul {
 		display: none;
@@ -40,7 +36,7 @@ a {
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -62,13 +58,9 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
+		
 
-			a:hover,
-			a.focus {
-			}
+		
 		}
 
 		li:hover > ul,
@@ -77,22 +69,16 @@ a {
 		}
 	}
 	li {
-		float: left;
+		
 		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
+		
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
 }
 
 /* Small menu. */
@@ -104,9 +90,6 @@ a {
 @media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
 	}
 }
 
@@ -120,13 +103,229 @@ a {
 	}
 
 	.nav-previous {
-		float: left;
+		
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
+		
 		text-align: right;
 		width: 50%;
 	}
+}
+
+
+//header nav
+
+.main-navigation ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: row;
+	padding-right: 20px;
+}
+
+.main-navigation li {
+	padding-left: 20px;
+}
+
+
+
+.shop-stuff {
+	text-align: center;
+}
+
+.product-type-block-wrapper {
+	border: 1px, solid, $shop-stuff;
+	border-top: 4px, solid, $shop-stuff;
+	padding: 5px;
+	margin: 10px;
+	width: 250px;
+	height: 280px;
+	a{
+		text-decoration: none;
+		background-color: $shop-button;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+
+
+		&:hover{
+			background-color: $shop-button-hover;
+			}
+		
+	}
+
+}
+.product-type-block-wrapper:hover{
+	border: 1px, solid, #d99054;
+	border-top: 4px, solid #d99054;
+	}
+
+
+.product-type-blocks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.front-journal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border:1px, solid, $shop-stuff;
+	margin: 10px;
+	width: 33.333%;
+	
+
+}
+
+.flex-journals {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.Inhabitent-Journal {
+	text-align: center;
+}
+
+.latest-adventures {
+	text-align: center;
+}
+
+.grid-adventures {
+	margin:auto;
+	max-width: 1120px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+	grid-template-rows: 265px 265px;
+	
+	
+	> div {
+		position: relative;
+	}
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.adventure-meta {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	font-size: 30px;
+	color: white;
+	a {
+	color: white;
+	text-decoration: none;
+	&:hover {
+		background-color: $shop-button;
+		border: none;
+	}	
+	}
+	
+	
+}
+
+.one {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+	a {
+		border: 1px, solid, white;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+	}
+
+}
+
+
+.two {
+	grid-column: 3 / -1;
+	grid-row: 1 / 2;
+	font-size: 18px;
+	line-height: 40px;
+	a {
+		border: 1px, solid, white;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+	}
+}
+
+.three {
+	grid-column: 3 / 4;
+	line-height: 30px;
+	a {
+		border: 1px, solid, white;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+	}
+	
+}
+
+.four {
+	grid-column: 4 / -1;
+	line-height: 30px;
+	
+	a {
+		border: 1px, solid, white;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+}
+
+
+.read-more {
+	background-color: white;
+	border: 1px, solid, black; 
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+	&:visited{
+		color: black;
+	}
+	&:hover {
+	background-color: $shop-button;
+	border: none;
+	color: white;
+	}
+}
+
+.stars {
+	position: absolute;
+	top: 288%;
+	left: 73%;
+	width: 100px;
+}
+
+.canoe {
+	position: absolute;
+	top: 258%;
+	left: 53%;
+	width: 100px;
+}
+
+.padding-mount {
+	margin: none;
 }
