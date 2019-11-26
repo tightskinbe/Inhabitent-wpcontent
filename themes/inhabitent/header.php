@@ -47,9 +47,10 @@
 
 					<div class="front-logo">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/imgs/logos/inhabitent-logo-full.svg" width="275px" height="275px" alt="tent logo" />
+						
 					</div>
-
 					<?php the_post_thumbnail(); ?>
+					
 
 				<?php } elseif ( is_page() ) { ?>
 

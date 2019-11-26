@@ -570,8 +570,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border: 1px, solid, #e1e1e1;
-  margin: 10px;
-  max-width: 33.333%; }
+  margin: 10px; }
   .front-journal img {
     -o-object-fit: cover;
        object-fit: cover; }
@@ -682,6 +681,23 @@ a {
 
 .padding-mount {
   margin: none; }
+
+.more-adventures {
+  padding: 0;
+  margin: 0 auto;
+  margin-left: 11%;
+  text-align: center;
+  max-width: 20%;
+  background-color: #248a83; }
+  .more-adventures:hover {
+    background-color: #19625d;
+    color: white;
+    border: none; }
+  .more-adventures h2 {
+    padding: 5px; }
+  .more-adventures a {
+    text-decoration: none;
+    color: white; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1067,12 +1083,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  max-width: 1200px;
   -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%; }
+     object-fit: cover; }
   .front-page-journal img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
-    width: 100%; }
+    max-width: none; }

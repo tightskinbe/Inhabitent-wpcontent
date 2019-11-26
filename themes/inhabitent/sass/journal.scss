@@ -101,13 +101,12 @@ article {
 .front-page-journal {
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
 
     img {
         object-fit: cover;
         height: 100%;
-        width: 100%;
-    }
+        max-width: none;;
+        }
 }
