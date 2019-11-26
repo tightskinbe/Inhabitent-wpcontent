@@ -41,7 +41,7 @@ get_header(); ?>
                 $args = array('post_type'=> 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
                 $posts_query = get_posts( $args );
                 ?>
-                <div class="flex-journals">
+                <div class="flex-journals front-page-journal">
                     <?php foreach ( $posts_query as $post ) : setup_postdata($post) ?>
                         <article class="front-journal">
                             <?php the_post_thumbnail('medium'); ?>

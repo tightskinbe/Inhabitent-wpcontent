@@ -178,19 +178,16 @@ a {
 	align-items: center;
 	border:1px, solid, $shop-stuff;
 	margin: 10px;
-	width: 33.333%;
+	max-width: 33.333%;
+	img{
+		object-fit: cover;
+	
+	}
 	
 
 }
 
-.flex-journals {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	
-	
-}
+
 
 .Inhabitent-Journal {
 	text-align: center;
