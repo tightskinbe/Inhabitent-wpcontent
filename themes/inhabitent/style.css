@@ -202,8 +202,7 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-  display: none; }
+  padding: 0.35em 0.625em 0.75em; }
 
 legend {
   border: 0;
@@ -429,11 +428,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: #248a83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -570,10 +567,27 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border: 1px, solid, #e1e1e1;
-  margin: 10px; }
+  margin: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1; }
   .front-journal img {
     -o-object-fit: cover;
        object-fit: cover; }
+  .front-journal h3 {
+    padding-left: 10px;
+    margin: 8px;
+    font-size: 25px; }
+  .front-journal p {
+    padding-left: 10px;
+    margin: 8px;
+    font-size: 14px; }
+  .front-journal a {
+    margin-left: 20px; }
 
 .Inhabitent-Journal {
   text-align: center; }
@@ -698,6 +712,32 @@ a {
   .more-adventures a {
     text-decoration: none;
     color: white; }
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.icon-search {
+  padding-top: 5px;
+  padding-right: 5px; }
+
+.nav-menu {
+  padding: 0;
+  padding-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 20%; }
+
+.search-form {
+  position: absolute;
+  right: 19%;
+  top: 3px; }
+  .search-form label {
+    background-color: rgba(255, 255, 255, 0.851); }
+
+.search-field {
+  background-color: rgba(255, 255, 255, 0.851); }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -932,9 +972,10 @@ header {
           align-items: center;
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.851);
   height: 40px;
-  border-bottom: 1px, solid, #e1e1e1; }
+  border-bottom: 1px, solid, #e1e1e1;
+  z-index: 10; }
 
 .side-bar {
   margin: 0 auto; }
@@ -963,8 +1004,8 @@ header {
   margin: 160px; }
 
 .product-meta {
-  border: 1px, solid, black;
-  border-top: 3px, solid, black;
+  border: 1px, solid, #e1e1e1;
+  border-top: 5px, solid, #e1e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,11 +1015,35 @@ header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  padding: 10px; }
   .product-meta h2 {
-    margin: 0 auto;
+    margin: 0;
     padding-top: 0;
-    font-size: 18px; }
+    font-size: 14px;
+    color: #2f1339;
+    text-align: left;
+    font-weight: normal; }
+  .product-meta p {
+    color: #2f1339;
+    margin: 0; }
+
+.page-header {
+  margin: 0 auto;
+  /* padding-top: 53px; */
+  position: absolute;
+  top: 100px;
+  right: 40%; }
+  .page-header h1 {
+    margin: 0;
+    color: #404040; }
+  .page-header p {
+    margin: 0;
+    color: #248a83; }
+
+.product-type-blocks a {
+  padding: 5px;
+  text-decoration: none; }
 
 .find-us {
   margin-top: 93px;
@@ -1027,6 +1092,15 @@ header {
        object-fit: cover;
     width: 100%;
     height: 500px; }
+
+.post-type-archive .entry-header {
+  position: relative; }
+  .post-type-archive .entry-header img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 250px;
+    display: block; }
 
 .blog .entry-title {
   position: absolute;
@@ -1086,8 +1160,18 @@ header {
   max-width: 1200px;
   -o-object-fit: cover;
      object-fit: cover; }
+  .front-page-journal article {
+    width: 33.333333333333%; }
+  .front-page-journal h3 {
+    color: #248a83;
+    text-align: left; }
   .front-page-journal img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
-    max-width: none; }
+    max-width: none;
+    width: 100%; }
+
+.front-journal-image {
+  height: 270px;
+  width: 100%; }

@@ -44,8 +44,10 @@ get_header(); ?>
                 <div class="flex-journals front-page-journal">
                     <?php foreach ( $posts_query as $post ) : setup_postdata($post) ?>
                         <article class="front-journal">
-                            <?php the_post_thumbnail('medium'); ?>
-                            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' );?>
+                           <div class="front-journal-image">
+                              <?php the_post_thumbnail('medium'); ?>
+                           </div>
+                            <p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' );?></p>
                             <h3><?php the_title();?></h3>
                             <a class="read-more" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
                         </article>

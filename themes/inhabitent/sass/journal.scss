@@ -10,9 +10,7 @@
     padding-top: 75px;
 }
 
-article {
-    // position: relative;
-}
+
 
 .entry-meta {
     position: absolute;
@@ -33,6 +31,30 @@ article {
         height: 500px;
     }
 }
+
+
+
+.post-type-archive {
+
+    .entry-header {
+        position: relative;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+            display: block;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
 .blog {
 
 
@@ -103,10 +125,27 @@ article {
     flex-direction: row;
     max-width: 1200px;
     object-fit: cover;
+    // text-align: left;
+    article {
+        width: 33.333333333333%;
+    }
+
+    h3 {
+        color: $shop-button;
+        text-align: left;
+
+    }
 
     img {
         object-fit: cover;
         height: 100%;
-        max-width: none;;
+        max-width: none;
+        width: 100%;
         }
+}
+
+
+.front-journal-image {
+    height: 270px;
+    width: 100%;
 }

@@ -41,9 +41,10 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: hsla(0,0%,100%,.85);
+    background-color: $header-background;
     height: 40px;
     border-bottom: 1px, solid, $shop-stuff;
+    z-index: 10;
     
 }
 

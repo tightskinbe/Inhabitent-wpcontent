@@ -6,15 +6,48 @@
 }
 
 .product-meta {
-    border: 1px, solid, black;
-    border-top: 3px, solid, black;
+    border: 1px, solid, $shop-stuff;
+    border-top: 5px, solid, $shop-stuff;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 10px;
     h2 {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 0;
-        font-size: 18px;
+        font-size: 14px;
+        color: $shop-h3;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    p {
+        color: $shop-h3;
+        margin: 0;
     }
     
+}
+.page-header {
+    margin: 0 auto;
+    /* padding-top: 53px; */
+    position: absolute;
+    top: 100px;
+    right: 40%;
+    h1 {
+        margin: 0;
+        color: $color__text-main;
+    }
+    p {
+        margin: 0;
+        color: $shop-button
+    }
+}
+
+
+
+.product-type-blocks {
+    a {
+        padding: 5px;
+        text-decoration: none;
+    }
 }

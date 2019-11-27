@@ -13,10 +13,19 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<h1>Shop Stuff</h1>
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+               $terms = get_terms( array(
+                   'taxonomy' => 'product_type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
+                  <?php foreach ( $terms as $term ) : ?>
+                <a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a>                  <?php endforeach; ?>
+               </div>
+            <?php endif; ?>
 			</header><!-- .page-header -->
 
 			<section class="products-grid">

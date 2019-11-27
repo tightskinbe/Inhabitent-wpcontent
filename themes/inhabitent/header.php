@@ -37,6 +37,9 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+
+			<?php get_search_form(); ?>
+
 			</header><!-- #masthead -->
 
 			<!-- Php code to add the thumbnail and the logo -->
