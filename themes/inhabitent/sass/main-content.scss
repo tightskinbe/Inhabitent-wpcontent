@@ -21,7 +21,21 @@
 }
 .footer-hours {
     padding-left: 5rem;
+    h3 {
+        color: $footer-color;
+    }
 }
+
+
+.footer-info {
+    h3 {
+        color: $footer-color;
+    }
+}
+
+
+
+
 .footer-logo {
 padding-left: 15rem;
 padding-top: 2rem;
@@ -30,7 +44,6 @@ color: white;
 //end of footer content
 
 header {
-    color: green;
     text-align: center;
 
 }
@@ -60,7 +73,12 @@ header {
 
 .about-content {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    max-width: 750px;
+    h2 {
+        text-align: center;
+    }
+
 }
 
 .flex-journals {

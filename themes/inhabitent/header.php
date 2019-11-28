@@ -25,7 +25,19 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="tent-logo">
 				<a href="/inhabitent">
+
+
+
+				<?php if ( is_front_page() ) { ?>
+
 				<img src="<?php echo get_template_directory_uri(); ?>/images/imgs/logos/inhabitent-logo-tent-white.svg" width="50px" height="50px" alt="tent logo" />
+				
+				<?php  } else { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/images/imgs/logos/inhabitent-logo-tent.svg" width="50px" height="50px" alt="tent logo" />
+				<?php  }?>
+
+
+
 				</a>
 				</div>
 				<div class="site-branding">
@@ -56,11 +68,12 @@
 					
 
 				<?php } elseif ( is_page() ) { ?>
-
+					<div class="about-image">
 					<h2><?php the_title(); ?></h2>
-
+					</div>
+					<div class="poop">
 					<?php the_post_thumbnail(); ?>
-					
+					</div>
 					<?php  } else { ?>
 						<!-- do nothing -->
 					<?php  }?>

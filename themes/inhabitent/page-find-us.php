@@ -24,8 +24,31 @@ get_header(); ?>
 				<h2>Send Us Email!</h2>
 			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<!-- template part.............. -->
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+
+
+
+
+
+				<!-- template part end................. -->
 
 			<?php endwhile; // End of the loop. ?>
 

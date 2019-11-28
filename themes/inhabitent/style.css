@@ -846,6 +846,9 @@ a {
 .bypostauthor {
   display: block; }
 
+.link-wrapper {
+  line-height: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -950,6 +953,11 @@ object {
 
 .footer-hours {
   padding-left: 5rem; }
+  .footer-hours h3 {
+    color: #d99054; }
+
+.footer-info h3 {
+  color: #d99054; }
 
 .footer-logo {
   padding-left: 15rem;
@@ -957,7 +965,6 @@ object {
   color: white; }
 
 header {
-  color: green;
   text-align: center; }
 
 .site-header {
@@ -982,7 +989,10 @@ header {
 
 .about-content {
   margin: 0 auto;
-  text-align: center; }
+  text-align: left;
+  max-width: 750px; }
+  .about-content h2 {
+    text-align: center; }
 
 .flex-journals {
   text-align: left; }
@@ -1029,11 +1039,9 @@ header {
     margin: 0; }
 
 .page-header {
-  margin: 0 auto;
   /* padding-top: 53px; */
-  position: absolute;
-  top: 100px;
-  right: 40%; }
+  position: relative;
+  top: 100px; }
   .page-header h1 {
     margin: 0;
     color: #404040; }
@@ -1175,3 +1183,156 @@ header {
 .front-journal-image {
   height: 270px;
   width: 100%; }
+
+.single-product-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px; }
+  .single-product-flex h1 {
+    color: #d99054;
+    text-align: left;
+    padding-left: 30px; }
+  .single-product-flex p {
+    color: black;
+    text-align: left;
+    padding-left: 30px; }
+  .single-product-flex img {
+    width: 90%;
+    height: 90%; }
+
+.nav-links {
+  display: none; }
+
+.single-media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20px;
+  text-align: center; }
+  .single-media-links:hover {
+    color: white; }
+  .single-media-links a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 1px, solid, black;
+    text-align: left;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px; }
+    .single-media-links a:hover {
+      background-color: #248a83;
+      color: white;
+      border: none; }
+
+.single-content {
+  margin: 0 auto;
+  max-width: 550px; }
+
+.group-products img {
+  width: 100%;
+  height: 250px; }
+
+.single-journal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #248a83;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.single-journal-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .single-journal-links p {
+    padding: 20px;
+    padding-left: none; }
+
+.single-journal-buttons {
+  margin-bottom: 30px;
+  padding-left: 20px; }
+  .single-journal-buttons a {
+    border: 1px, solid, black;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black; }
+    .single-journal-buttons a:hover {
+      background-color: #248a83;
+      color: white;
+      border: none; }
+
+.about-image {
+  position: absolute;
+  left: 44%;
+  top: 30%;
+  font-size: 40px;
+  color: white; }
+
+.poop img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rga(0, 0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rga(0, 0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); }
+
+.search-header {
+  position: relative;
+  top: 20px; }
+
+.search-title {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px, solid, #e1e1e1; }
+
+.search-headers {
+  max-width: 750px;
+  margin: 0 auto; }
+
+.top-of-search {
+  margin: 0 auto;
+  max-width: 750px;
+  text-align: left;
+  padding-top: 30px; }
+
+.search-h1s {
+  margin: 0 auto; }
+  .search-h1s a {
+    text-decoration: none; }
+
+.error-content p {
+  margin: 0 auto;
+  max-width: 750px; }
+
+.error-title {
+  position: relative;
+  padding-top: 50px; }
+
+.error-search {
+  position: relative; }
+
+.widget_recent_entries {
+  margin: 0 auto;
+  max-width: 750px; }
+  .widget_recent_entries ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+
+.widget_archive {
+  margin: 0 auto;
+  max-width: 750px; }
+  .widget_archive p {
+    padding-bottom: 10px; }

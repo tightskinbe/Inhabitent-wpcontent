@@ -12,7 +12,29 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+		<!-- page template -->
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+
+		<!-- end of page template -->
+
 
 			<?php endwhile; // End of the loop. ?>
 			<section class="about-content">

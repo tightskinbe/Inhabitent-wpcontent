@@ -14,7 +14,7 @@
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 				</div><!-- .site-info -->
 				<div class="flex-footer">
-				<div>
+				<div class="footer-info">
 					<h3>Contact Info</h3>
 					<p><i class="fas fa-envelope"></i> info@inhabitent.com</p>
 					<p><i class="fas fa-phone-alt"></i> 778-456-7891</p>
@@ -27,7 +27,7 @@
 					<p>Sunday: Closed</p>
 				</div>
 				<div class="footer-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/imgs/logos/inhabitent-logo-text-dark.svg" width="70%" height="70%" alt="" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/imgs/logos/inhabitent-logo-text.svg" width="70%" height="70%" alt="" />
 				<!-- images/imgs/dark-wood.png); -->
 					
 				</div>

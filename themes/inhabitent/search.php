@@ -12,15 +12,42 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<header class="search-header">
+				<h1 class="search-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<!-- temp part........................ -->
 
-				<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="top-of-search">
+		<div class="search-h1s">
+		<?php the_title( sprintf( '<h2 class="search-titles"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		</div>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
+		<div class="entry-meta">
+			
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
+	</header><!-- .entry-header -->
+
+	<div class="search-headers">
+		<?php the_excerpt(); ?>
+		<a href="">Read More</a>
+	</div><!-- .entry-summary -->
+</article><!-- #post-## -->
+
+
+
+
+
+
+
+				<!-- temp part end.................... -->
 			<?php endwhile; ?>
 
 			<?php red_starter_numbered_pagination(); ?>
